@@ -1,0 +1,62 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    margin-bottom: 50px;
+}
+
+.banniere{
+    background-image: url("../../back-end/images/Ours_Teddy.jpg");
+    background-position: center;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.white{
+    color: white;
+    
+}
+
+.card{
+    transition: 0.3s ease-in-out;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 3px 25px -10px rgba(178,178,178,0.79);
+}
+
+a h5,a p{
+    color: black;
+}
+
+a:link 
+{ 
+ text-decoration:none; 
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card-img-top{
+    height: 220px;
+}
+
+.price{
+    float: right;
+    color:gray
+}
+
+.description{
+    height: 20px;
+}
+
+.description p{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
