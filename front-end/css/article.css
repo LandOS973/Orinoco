@@ -1,0 +1,37 @@
+
+footer{
+    position: absolute;
+    width: 100vw;
+    bottom: 0px;
+}
+
+.article{
+    display: flex;
+}
+
+.top{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.price{
+    color: gray;
+    font-size: 30px;
+}
+
+.shop{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 500px;
+}
+
+.imageProduit{
+    height: 82vh;
+}
+
+.btn{
+    margin-top: 50px;
+}
