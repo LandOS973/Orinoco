@@ -1,9 +1,7 @@
-
-footer{
-    position: absolute;
-    width: 100vw;
-    bottom: 0px;
+body{
+    overflow-x: hidden;
 }
+
 
 .article{
     display: flex;
@@ -16,7 +14,7 @@ footer{
 }
 
 .price{
-    color: gray;
+    color: green;
     font-size: 30px;
 }
 
@@ -26,12 +24,24 @@ footer{
     justify-content: space-around;
     align-items: center;
     max-width: 500px;
+    height: 500px;
 }
 
 .imageProduit{
-    height: 82vh;
+    width: 100vw;
+    margin-left: -20px;
+}
+
+@media (max-width:800px) {
+      .imageProduit{
+          height: 500px;
+      }  
+      .shop{
+          height: 300px;
+      }
 }
 
 .btn{
-    margin-top: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }

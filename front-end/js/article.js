@@ -3,6 +3,7 @@ function afficherArticle(article){
     document.querySelector('.name').innerHTML = `<h1>${article.name}</h1>`;
     document.querySelector('.price').innerHTML = `<p>${article.price/100} &euro;</p>`;
     document.querySelector('.description').innerHTML = `<p>${article.description}</p>`;
+    document.querySelector('title').innerHTML = `Orinoco - ${article.name}`;
     for (const color of article.colors) {
         document.querySelector('#colors').innerHTML += `<option value="${color}">${color}</option>`;
     }
