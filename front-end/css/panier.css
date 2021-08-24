@@ -1,0 +1,13 @@
+.card-img-top{
+    height: 250px;
+}
+
+main{
+    min-height: 800px;
+}
+
+.margin{
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 120px;
+}

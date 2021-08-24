@@ -41,12 +41,16 @@ body {
     text-shadow: white 1px 1px 1px, white -1px 1px 1px, white -1px -1px 1px, white 1px -1px 1px;
 }
 
+.panier{
+    width: 200px;
+}
+
 @media (max-width:768px) {
     .imageProduit {
         height: 500px;
     }
     .shop {
-        height: 400px;
+        height: 460px;
         background-color: honeydew;
     }
     .article {
