@@ -40,17 +40,21 @@
     </header>
     <main>
         <div class="container-fluid">
-            <div class="row">
-                <div class="image_teddy col-lg-7"></div>
-                <div class="shop col-lg-5">
+            <div class="row article">
+                <div class="image_teddy col-md-7"></div>
+                <div class="shop col-md-5">
                     <div class="top">
                         <div class="name"></div>
                         <div class="price"></div>
                     </div>
                     <div class="description"></div>
-                    <form action="">
+                    <form action="./panier.html">
+                        <div class="form-group mb-4">
+                            <label for="quantity">Quantité : </label>
+                            <input value="1" min="1" type="number" class="form-control quantity" id="quantity">
+                        </div>
                         <select class="form-select" aria-label="Default select example" name="colors" id="colors"></select>
-                        <button class="btn btn-dark" type="submit"><i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;Ajouter au panier</button>
+                        <button class="btn btn-dark panier" type="submit"><i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;Ajouter au panier</button>
                     </form>
 
                 </div>
