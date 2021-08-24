@@ -1,3 +1,5 @@
+// Affichage des articles dans la page dédiée
+
 function afficherArticles(articles){
     for (const article of articles) {
         document.querySelector('.product').innerHTML += `
