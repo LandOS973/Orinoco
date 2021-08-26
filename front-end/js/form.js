@@ -64,14 +64,13 @@ function validation(){
 function contact(panier){
     const btn = document.querySelector('.btnContact');
     btn.addEventListener("click",function(e){
-        e.preventDefault()
+        e.preventDefault();
         if (validation()) {
+            const produitsEnvoyés = [];
             for (const article of panier) {
-                delete article.color;
-                delete article.colors;
-                delete article.description;
-                delete article.imageUrl;
+                produitsEnvoyés.push(article._id)
             }
+            console.log(produitsEnvoyés);
             let order = {
                 contact : {
                     firstName: document.querySelector('#name').value,
@@ -80,7 +79,7 @@ function contact(panier){
                     city: document.querySelector('#city').value,
                     email: document.querySelector('#email').value,
                 },
-                products : panier,
+                products : produitsEnvoyés,
             }
             console.table(order);
             const options = {
@@ -93,7 +92,9 @@ function contact(panier){
             .then((data) => {
               console.log(data)
               localStorage.setItem("orderId", data.orderId);
-              localStorage.setItem("total", priceConfirmation[1]);
+              localStorage.setItem("price",total(panier));
+              localStorage.removeItem("products");
+              window.location.href = "./confirm.html";
             })
             .catch((err) => {
               alert("Il y a eu une erreur : " + err);

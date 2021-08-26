@@ -25,17 +25,21 @@ function affichagePanier(panier){
 
 //Calcul et Affiche prix total de la commande
 function total(panier){
+    let total = 0;
+    for (const article of panier) {
+        total += article.price;
+    }
+    total/= 100;
+    return total;
+}
+
+function afficheTotal(panier){
     if (panier) {
-        let total = 0;
-        for (const article of panier) {
-            total += article.price;
-        }
-        total/= 100;
         document.querySelector('.total').innerHTML += `
         <div class="col-sm-6 col-lg-4 mb-4">
             <div class="card ">
                 <div class="card-body ">
-                    <strong>Prix total</strong> : ${total} &euro;
+                    <strong>Prix total</strong> : ${total(panier)} &euro;
                 </div>
             </div>
         </div>`
@@ -54,7 +58,7 @@ function supprimer(){
 function main(){
     let panier = JSON.parse(localStorage.getItem("products"));
     affichagePanier(panier);
-    total(panier);
+    afficheTotal(panier);
     supprimer(); 
 }
 
