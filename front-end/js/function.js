@@ -1,4 +1,4 @@
-// renvoie une variable a partir de l'url de l'api
+// renvoie un objet a partir de l'url de l'api
 
 async function getArticles(url){
     return fetch(url)

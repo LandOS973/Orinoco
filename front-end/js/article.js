@@ -1,5 +1,4 @@
 // Affichage article dans la page dédiée
-
 function afficherArticle(article){
     document.querySelector('.image_teddy').innerHTML = `<img class="imageProduit" src="${article.imageUrl}" alt="image ours">`;
     document.querySelector('.name').innerHTML = `<h1>${article.name}</h1>`;
@@ -12,7 +11,6 @@ function afficherArticle(article){
 }
 
 // Changement de couleur de text pour l'une des pages 
-
 function contrast(article){
     if (article.name == "Gustav") {
         document.querySelector('.article').classList.add("contrast");
@@ -20,7 +18,6 @@ function contrast(article){
 }
 
 // Fonction qui informe ajout panier ou problème ajout panier
-
 function alert(article){
     let reponse = document.querySelector('.reponse');
     if (article.quantity > 0) {
@@ -31,25 +28,24 @@ function alert(article){
 }
 
 // methode d'ajout au localstorage de l'article en transformant l'objet au format JSON
-
 function ajoutPanier(article){
     document.querySelector('.panier').addEventListener('click', event => {
         event.preventDefault();
         // Enregistre couleur et quantité choisi
         article.quantity = document.querySelector('.quantity').value;
         article.color = document.querySelector('#colors').value;
-        let tableauProduit = JSON.parse(localStorage.getItem("panier"));
+        let tableauProduit = JSON.parse(localStorage.getItem("products"));
         alert(article);
         // Verifie que la quantité est valide
         if (article.quantity > 0) {
             // Ajout un tableau de JSON au localstorage qui a l'id => "panier"
             if (tableauProduit) {
                 tableauProduit.push(article);
-                localStorage.setItem("panier",JSON.stringify(tableauProduit));
+                localStorage.setItem("products",JSON.stringify(tableauProduit));
             } else {
                 tableauProduit = [];
                 tableauProduit.push(article);
-                localStorage.setItem("panier",JSON.stringify(tableauProduit));
+                localStorage.setItem("products",JSON.stringify(tableauProduit));
             }
         }
     });

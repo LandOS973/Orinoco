@@ -33,8 +33,8 @@ function total(panier){
         total/= 100;
         document.querySelector('.total').innerHTML += `
         <div class="col-sm-6 col-lg-4 mb-4">
-            <div class="card">
-                <div class="card-body">
+            <div class="card ">
+                <div class="card-body ">
                     <strong>Prix total</strong> : ${total} &euro;
                 </div>
             </div>
@@ -42,28 +42,18 @@ function total(panier){
     }
 }
 
-//Affiche tout les component en rapport avec le formulaire
-function affichageForm(panier){
-    if(panier){
-        document.querySelector('.validation').innerHTML +=`<btn href="#" class="retrait margin col-2 mb-4 btn btn-danger">Effacer le panier</btn>`;
-        document.querySelector('.validation').innerHTML +=`<btn href="#" class="valider margin col-2 mb-4 btn btn-success">Valider la commande</btn>`;
-    }
-}
-
-
 // Supprime tout les articles du panier
 function supprimer(){
-    document.querySelector('.retrait').addEventListener("click",function(e){
+    document.querySelector('.effacer').addEventListener("click",function(e){
         e.preventDefault();
-        localStorage.removeItem("panier");
+        localStorage.removeItem("products");
         location.reload();
     })
 }
 
 function main(){
-    let panier = JSON.parse(localStorage.getItem("panier"));
+    let panier = JSON.parse(localStorage.getItem("products"));
     affichagePanier(panier);
-    affichageForm(panier);
     total(panier);
     supprimer(); 
 }
