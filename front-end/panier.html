@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <title></title>
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/panier.css">
+    <title>Oricoco - Panier</title>
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -21,19 +24,61 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-shopping-cart"></i>
-                                Panier</a>
+                            <a class="nav-link active" aria-current="page" href="#"><i
+                                    class="fas fa-shopping-cart"></i>Panier</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+    <main>
+        <div class="container">
+            <h1 class="text-center titrePanier display-1">Mon panier</h1>
+            <div class="row panier"></div>
+            <div class="row total"></div>
+            <div class="effacer row"></div>
+            <div class="formulaire"></div>
+            <div class="result"></div>
+        </div>
+    </main>
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1"
+                    href="https://www.facebook.com/profile.php?id=1443914350" role="button">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/ThomasLandais6"
+                    role="button">
+                    <i class="fab fa-twitter"></i>
+                </a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/toma.lds/"
+                    role="button">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/ThomasL9731" role="button">
+                    <i class="fab fa-github"></i>
+                </a>
+            </section>
+        </div>
+    </footer>
+    <!-- JS -->
     <script src="./js/panier.js"></script>
+    <script src="./js/form.js"></script>
     <script src="https://kit.fontawesome.com/abd7abd843.js" crossorigin="anonymous"></script>
     <script src="./js/function.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
         crossorigin="anonymous"></script>
 </body>
+
 </html>

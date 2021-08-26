@@ -1,9 +1,12 @@
 body{
     font-family: 'Roboto', sans-serif;
+    background-color: #EAEAEA;
 }
 
-header{
-    margin-bottom: 50px;
+
+
+main{
+    background-color: #EAEAEA;
 }
 
 .banniere{
@@ -15,6 +18,9 @@ header{
     align-items: center;
 }
 
+.titrePanier{
+    color: red;
+}
 
 .white{
     color: white;
@@ -27,6 +33,7 @@ header{
     margin-left: auto;
     margin-right: auto;
     box-shadow: 2px 3px 25px -10px rgba(178,178,178,0.79);
+    margin-top: 30px;
 }
 
 a h5,a p{
