@@ -1,7 +1,10 @@
+// Affichage panier dans la page panier
 function affichagePanier(panier){
     if (!panier) {
+        // Si la variable panier est vide
         document.querySelector('.panier').innerHTML += `<p class="text-center">Panier vide !</p><img class="travolta" src="../back-end/images/travolta.gif" alt="" srcset="">`;
     }else{
+        // Boucle sur chaque article du panier
         for (const article of panier) {
             document.querySelector('.panier').innerHTML += `
             <div class="col-sm-6 col-lg-4 mb-4">
@@ -23,18 +26,10 @@ function affichagePanier(panier){
     }
 }
 
-//Calcul et Affiche prix total de la commande
-function total(panier){
-    let total = 0;
-    for (const article of panier) {
-        total += article.price;
-    }
-    total/= 100;
-    return total;
-}
-
+// Affichage du prix total => Utilise la fonction "total()" défini dans function.js
 function afficheTotal(panier){
     if (panier) {
+        //  Si le panier est défini :
         document.querySelector('.total').innerHTML += `
         <div class="col-sm-6 col-lg-4 mb-4">
             <div class="card ">
@@ -48,9 +43,12 @@ function afficheTotal(panier){
 
 // Supprime tout les articles du panier
 function supprimer(){
+    // Ecoute l'évenement du bouton supprimer
     document.querySelector('.effacer').addEventListener("click",function(e){
         e.preventDefault();
+        // Supprime le storage qui à la key "products"
         localStorage.removeItem("products");
+        // Recharge la page pour afficher un panier vide (et john travolta)
         location.reload();
     })
 }

@@ -1,6 +1,6 @@
-// Affichage des articles dans la page dédiée
-
+// Affichage des articles dans la page d'acceuil
 function afficherArticles(articles){
+    // Boucle sur les objet dans la variable articles
     for (const article of articles) {
         document.querySelector('.product').innerHTML += `
         <div class="col-sm-12 col-md-6 col-lg-4">
