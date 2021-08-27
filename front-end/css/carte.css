@@ -1,0 +1,22 @@
+.carte{
+    background-color: #F0FFF0;
+    height: 100px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-shadow: 5px 5px 15px 5px #AAAAAA; 
+    box-shadow: 5px 5px 15px 5px #AAAAAA;
+    border-radius: 5px;
+}
+
+.texte i{
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+
+.secur{
+    margin-top:50px;
+}

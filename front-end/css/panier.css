@@ -18,6 +18,11 @@ main{
     min-width: 120px;
 }
 
+.titrePanier{
+    border-bottom:1px solid black;
+    margin-bottom: 30px;
+}
+
 .travolta{
     height: 350px;
     width: 300px;
@@ -26,8 +31,8 @@ main{
 }
 
 .contact-form{
+    margin-top: 10px;
     background: #fff;
-    margin-top: 5%;
     margin-bottom: 5%;
     width: 70%;
 }
