@@ -7,7 +7,7 @@ function affichageCommande(){
     if(commande){
         // Si une commande à été passée
         document.querySelector('.commande').innerHTML = `
-        <h2>Merci de votre commande !</h2> 
+        <h2>Merci pour votre commande !</h2> 
         <p>Votre numéro de commande : <strong>${orderId}</strong></p> 
         <p class="text-commande">Prix total de la commande : <strong>${price} &euro;</strong></p>`
         for (const article of commande) {

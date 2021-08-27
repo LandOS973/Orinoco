@@ -32,7 +32,12 @@ main{
 
 .white{
     color: white;
-    
+    opacity: 1;
+}
+
+.text{
+    background-color:rgba(0, 0, 0, 0.5);
+
 }
 
 .card{

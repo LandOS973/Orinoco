@@ -116,6 +116,8 @@ function contact(panier){
             .catch((err) => {
               alert("Il y a eu une erreur : " + err);
             });
+        }else{
+            alert("champ invalide")
         }
     })
 }
