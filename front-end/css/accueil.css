@@ -3,6 +3,14 @@ body{
     background-color: #EAEAEA;
 }
 
+.secur{
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+i{
+    margin-right: 5px;
+}
 
 
 main{

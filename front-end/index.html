@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/accueil.css">
+    <link rel="stylesheet" href="./css/carte.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -20,16 +21,19 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html">Orinoco</a>
+                <a class="navbar-brand" class="acceuil" href="./index.html">Orinoco</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="./panier.html"><i class="fas fa-shopping-cart"></i>Panier</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./confirm.html"><i class="fas fa-store-alt"></i>Commande</a>
                         </li>
                     </ul>
                 </div>
@@ -46,6 +50,38 @@
     </header>
     <main>
         <div class="container">
+            <div class="row secur">
+                <div class="col-sm-12 col-lg-6">
+                    <div class="carte">
+                        <div class="texte">
+                            <h5><i class="fas fa-user-check"></i> Garantie à Vie </h5>
+                            <p>Nous nous engageons à réparer votre peluche si elle devait subir l'usure du temps.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-6">
+                    <div class="carte">
+                        <div class="texte">
+                            <h5><i class="fas fa-shield-alt"></i> Transactions sécurisées</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-6">
+                    <div class="carte">
+                        <div class="texte">
+                            <h5><i class="fas fa-truck"></i>Livraison en 3 à 4 jours ouvrés</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-6">
+                    <div class="carte">
+                        <div class="texte">
+                            <h5><i class="fas fa-exchange-alt"></i> Retours possibles pendant 14 jours </h5>
+                            <p>Contactez notre Service Clients pour plus d'informations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="product row">
             </div>
         </div>
