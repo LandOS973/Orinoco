@@ -12,7 +12,7 @@ Compétences évaluées:
 - Gérer des événements JavaScript
 
 Prerequis :
-Pour faire fonctionner ce projet, vous avez besoin de Node et npm d'installés sur votre machine
+Pour faire fonctionner ce projet, vous avez besoin de Node et npm d'installés sur votre machine : https://nodejs.org/en/
 
 Installation:
 - Clonez ce dépot, allez dans le dossier "back-end"; 
