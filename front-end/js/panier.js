@@ -31,7 +31,7 @@ function afficheTotal(panier){
     if (panier) {
         //  Si le panier est défini :
         document.querySelector('.total').innerHTML += `
-        <div class="col-sm-6 col-lg-4 mb-4">
+        <div class="col-sm-6 col-lg-4 mb-4 text-center">
             <div class="card ">
                 <div class="card-body ">
                     <strong>Prix total</strong> : ${total(panier)} &euro;

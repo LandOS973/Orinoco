@@ -59,7 +59,7 @@ function affichageForm(panier) {
 function validation(){
     const form = document.querySelector('form');
     let validEmail = new RegExp(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/);
-    let validName = new RegExp(/^[a-zA-Z ]+$/);
+    let validName = new RegExp(/^[a-zA-Z]+[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/);
     let validAdress = new RegExp(/^[a-zA-Z0-9\s,.'-]{3,}$/);
     return validEmail.test(form.email.value) && validName.test(form.firstName.value) && validName.test(form.city.value)  && validName.test(form.lastName.value)  && validAdress.test(form.adress.value) ;
 }
@@ -117,7 +117,8 @@ function contact(panier){
               alert("Il y a eu une erreur : " + err);
             });
         }else{
-            alert("champ invalide")
+            alert("champ invalide");
+            e.preventDefault();
         }
     })
 }

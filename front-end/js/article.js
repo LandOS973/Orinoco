@@ -23,9 +23,9 @@ function alerte(article){
     let reponse = document.querySelector('.reponse');
     // Si la quantité d'ours ajouté au panier est supérieur a 1
     if (article.quantity >= 1) {
-        reponse.innerHTML = `<div class="alert alert-success mb-2" role="alert">Commande ajoutée au panier !</div>`
+        reponse.innerHTML = `<div class="information alert alert-success mb-2" role="alert">Commande ajoutée au panier !</div>`
     } else {
-        reponse.innerHTML = `<div class="alert alert-danger mb-2" role="alert">Erreur : Quantité invalide</div>`
+        reponse.innerHTML = `<div class="information alert alert-danger mb-2" role="alert">Erreur : Quantité invalide</div>`
     }
 }
 
