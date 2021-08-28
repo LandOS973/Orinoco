@@ -10,7 +10,7 @@ async function getArticles(url){
 function total(panier){
     let total = 0;
     for (const article of panier) {
-        total += article.price;
+        total += article.price * article.quantity;
     }
     total/= 100;
     return total;
